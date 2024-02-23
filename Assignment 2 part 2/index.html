@@ -1,186 +1,83 @@
 <!DOCTYPE html>
-<html lang="en-US">
-<!--
+<html lang="en">
 
-Name:Igiri Ovaiota
-
-File:index.html
-
-Date: 28 January 2024
-Desciption:In this file we edit a mozilla splash page and
- provide some links to further resources.
-
-
--->
+ 	<!--
+	Name: Ovaiota Igiri
+	File:   ASS2 PART2 .html
+	Date: 20 January, 2024
+	 .
+	-->
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Mozilla splash page</title>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-  <style>
-    /* header and body setup */
+  <title>Birdwatching</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300%7CCinzel+Decorative:700" rel="stylesheet">
+  <link href="styles/style.css" rel="stylesheet">
 
-    html {
-      font-family: 'Open Sans', sans-serif;
-      background: url(pattern.png);
-    }
-
-    body {
-      width: 100%;
-      max-width: 1200px;
-      margin: 0 auto;
-      background-color: white;
-      position: relative;
-    }
-
-    /* Header styling */
-
-    header {
-      height: 150px;
-    }
-
-    header img {
-      width: 100px;
-      position: absolute;
-      right: 32.5px;
-      top: 32.5px;
-    }
-
-    h1 {
-      font-size: 50px;
-      line-height: 140px;
-      margin: 0 0 0 32.5px;
-    }
-
-    /* main section and video styling */
-
-    main {
-      background: #ccc;
-    }
-
-    article {
-      padding: 20px;
-    }
-
-    h2 {
-      margin-top: 0;
-    }
-
-    p {
-      line-height: 2;
-    }
-
-    iframe {
-      float: left;
-      margin: 0 20px 20px 0;
-      max-width: 100%;
-    }
-
-    /* further info links */
-
-    .further-info {
-      clear: left;
-      padding: 40px 0;
-      background: #c13832;
-      box-shadow: inset 0 3px 2px rgba(0, 0, 0, 0.5),
-        inset 0 -3px 2px rgba(0, 0, 0, 0.5);
-    }
-
-    .further-info a {
-      width: 25%;
-      display: block;
-      float: left;
-    }
-
-    .further-info img {
-      max-width: 100%;
-    }
-
-    .clearfix {
-      clear: both;
-    }
-
-    /* Red panda image */
-
-    .red-panda img {
-      display: block;
-      max-width: 100%;
-    }
-  </style>
+  <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
 </head>
 
 <body>
   <header>
-    <h1>Mozilla</h1>
-    <img src="C:\Users\User\Documents\repositories\INFT-1206\originals\firefox_logo-only_RGB 120.png"
-      alt="firefox logo">
+    <h1>Birdwatching</h1>
+    <img src="images/dove.png" alt="a simple dove logo">
 
+    <nav>
+
+      <ul>
+        <li><span>Home</span></li>
+        <li><a href="#">Get started</a></li>
+        <li><a href="#">Photos</a></li>
+        <li><a href="#">Gear</a></li>
+        <li><a href="#">Forum</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
     <article>
-      <!-- insert iframe from youtube -->
-      <iframe width="400" height="315" src="https://www.youtube.com/embed/ojcNcvb1olg?si=i72iANxG257eavE9"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
+      <!--MAIN ARTICLES SECTION-->
+      <h2>Welcome</h2>
 
-      <h2>Rocking the free web</h2>
+      <p>Welcome to our fake birdwatching site. If this were a real site, it would be the ideal place to come to learn
+        more about birdwatching, whether you are a beginner looking to learn how to get into birding, or an expert
+        wanting to share ideas, tips, and photos with other like-minded people.</p>
 
-      <p>Mozilla are a global community of technologists, thinkers, and builders, working together to keep the Internet
-        alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this
-        act of human collaboration across an open platform is essential to individual growth and our collective future.
-      </p>
-
-      <p>Click on the images below to find more information about the cool stuff Mozilla does. <a
-          href="https://www.flickr.com/photos/mathiasappel/21675551065/">Red panda picture</a> by Mathias Appel.</p>
+      <p>So don't waste time! Get what you need, then turn off that computer and get out into the great outdoors!</p>
     </article>
 
-    <div class="further-info">
-      <!-- insert images with srcsets and sizes -->
-      <a href="https://www.mozilla.org/en-US/firefox/new/">
-        <img
-        srcset="C:\Users\User\Documents\repositories\INFT-1206\originals\firefox_logo-only_RGB 120.png 120w,
-        C:\Users\User\Documents\repositories\INFT-1206\originals\firefox_logo-only_RGB 400.png 400w" 
-        sizes="(max-width;500px) 120px, 400px"
-        src="C:\Users\User\Documents\repositories\INFT-1206\originals\firefox_logo-only_RGB 400.png" 
-        alt="firefox logo">
-      </a>
-      <a href="https://www.mozilla.org/">
-        <img 
-        srcset="C:\Users\User\Documents\repositories\INFT-1206\originals\Mozilla dino 120.png 120w,
-        C:\Users\User\Documents\repositories\INFT-1206\originals\Mozilla dino 400.png 400w,"
-        sizes="(max-width;500px) 120px, 400px"
-        src="C:\Users\User\Documents\repositories\INFT-1206\originals\Mozilla dino 400.png" 
-        alt="dino head">
-      </a>
-      <a href="https://addons.mozilla.org/">
-        <img
-        srcset="C:\Users\User\Documents\repositories\INFT-1206\originals\firefox-addons 120.png 120w,
-        C:\Users\User\Documents\repositories\INFT-1206\originals\firefox-addons 400.png 400w"
-        sizes="(max-width;500px) 120px, 400px"
-         src="C:\Users\User\Documents\repositories\INFT-1206\originals\firefox-addons 400.png "
-         alt="firefox add-ons">
-      </a> 
-      <a href="https://developer.mozilla.org/en-US/">
-        <img
-         src="C:\Users\User\Documents\repositories\INFT-1206\originals\mdn.svg"
-          alt="mdn">
-      </a>
-      <div class="clearfix"></div> 
-    </div>
+    <!--ASIDE SECTION-->
+    <section>
+      <aside>
+        <h2>Favourite photos</h2>
 
-    <div class="red-panda">
-      <!-- insert picture element -->
-      <picture>
-        <source media="(max-width:600px)"
-        srcset="C:\Users\User\Documents\repositories\INFT-1206\originals\red-panda 600.jpg">
-        <img src="C:\Users\User\Documents\repositories\INFT-1206\originals\red-panda 1200.jpg"
-         alt="red-panda">
-      </picture>
-    </div>
+        <a href="favorite-1.jpg"><img src="images/favorite-1_th.jpg"
+            alt="Small black bird, black claws, long black slender beak, links to larger version of the image"></a>
+        <a href="favorite-2.jpg"><img src="images/favorite-2_th.jpg"
+            alt="Top half of a pretty bird with bright blue plumage on neck, light colored beak, blue headdress, links to larger version of the image"></a>
+        <a href="favorite-3.jpg"><img src="images/favorite-3_th.jpg"
+            alt="Top half of a large bird with white plumage, very long curved narrow light colored break, links to larger version of the image"></a>
+        <a href="favorite-4.jpg"><img src="images/favorite-4_th.jpg"
+            alt="Large bird, mostly white plumage with black plumage on back and rear, long straight white beak, links to larger version of the image"></a>
+      </aside>
+    </section>
+    </main>
+
+    <article>
+      <footer>
+
+
+
+        <p>This fake website example is CC0 — any part of this code may be reused in any way you wish. Original example
+          written by Chris Mills, 2016.</p>
+
+        <p><a href="http://game-icons.net/lorc/originals/dove.html">Dove icon</a> by Lorc.</p>
+      </footer>
+    </article>
 
   </main>
+
 </body>
 
 </html>
