@@ -97,6 +97,7 @@ while (balls.length < 25) {
     for (const ball of balls) {
       ball.draw();
       ball.update();
+      ball.collisionDetect();
     }
   
     requestAnimationFrame(loop);
