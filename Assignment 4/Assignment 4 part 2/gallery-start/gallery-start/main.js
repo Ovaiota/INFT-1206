@@ -16,6 +16,9 @@ for (let i = 0; i < imageArray.length; i ++) {
     newImage.setAttribute('src', 'images/' + imageArray[i]);
     newImage.setAttribute('alt', altText[i]);
     thumbBar.appendChild(newImage);
+    newImage.addEventListener('click', (e) => {
+        displayedImage.src = e.target.src;
+    });
 }
 
 const newImage = document.createElement('img');
