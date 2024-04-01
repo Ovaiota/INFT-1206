@@ -11,7 +11,12 @@ const imageArray = ['pic1.jpg','pic2.jpg','pic3.jpg','pic4.jpg', 'pic5.jpg'];
 const altText = ['first image', 'second image','Third image','fourth image', 'fifth image'];
 
 /* Looping through images */
-
+for (let i = 0; i < imageArray.length; i ++) {
+    const newImage = document.createElement('img');
+    newImage.setAttribute('src', 'images/' + imageArray[i]);
+    newImage.setAttribute('alt', altText[i]);
+    thumbBar.appendChild(newImage);
+}
 
 const newImage = document.createElement('img');
 newImage.setAttribute('src', xxx);
